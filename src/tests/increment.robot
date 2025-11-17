@@ -5,11 +5,13 @@ Suite Teardown  Close Browser
 
 *** Test Cases ***
 At start the counter is zero
+    Click Button  Nollaa
     Go To  ${HOME_URL}
     Title Should Be  Laskuri
     Page Should Contain  nappia painettu 0 kertaa
 
 When button pressed twice the counter is two
+    Click Button  Nollaa
     Go To  ${HOME_URL}
     Click Button  Paina
     Click Button  Paina
